@@ -5,9 +5,6 @@
 
 body{
     font-family: sans-serif;
-  background: url();
-  background-repeat: no-repeat;
-  background-position: 40% 60%;
   width: 100%
 }
 
@@ -47,7 +44,7 @@ body{
 
 .img #vintense{
     float: left;
-    position: relative;
+    position: absolute;
     color: white;
     font-size: 18px;
     left: 100px;
@@ -89,3 +86,35 @@ body{
     font-size: 20px;
     top: 190px;
 }
+
+.row{
+  position: relative;
+  width: 100%;
+}
+
+.row2 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  padding-top: 17px;
+}
+
+h1{
+  position: relative;
+  padding-left: 10px;
+}
+
+p{
+  position: relative;
+  padding-left: 12px;
+}
+
+@media screen and (max-width:600px){
+    #intense{
+        max-width: 390px;
+    }
+}
+
+
+
