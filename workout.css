@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Segoe UI";
+}
+
+.links {
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+}
+
+.links ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.links ul li{
+    width: 145px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 20px;
+    border: 1px solid rgb(255, 255, 255,0.5);
+    transition: 0.6s ease;
+    position: relative;
+    left: 400px;
+}
+
+.links ul li a:hover{
+    background-color: rgb(233, 233, 233,0.8);
+    color: black;
+}
+
+#h1{
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    font-size: 60px;
+  color: #FFFFFF;
+}
+
+.text h1{
+  color: #FFFFFF
+}
+
+.text a{
+    text-decoration: none;
+    color: #E0DCDF;
+}
+
+
+#Intense{
+  color: #E0DCDF
+    position: absolute;
+    text-align: center;
+    top: 95px;
+    font-size: 45px;
+    right: 300px;
+}
+
+#Medium{
+  color: #E0DCDF
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    font-size: 45px;
+    right: 0px;
+}
+
+#Easy{
+  color: #E0DCDF
+    position: absolute;
+    text-align: center;
+    top: 148px;
+    font-size: 45px;
+    left: 300px;
+}
