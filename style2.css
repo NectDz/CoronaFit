@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("https://cdn.glitch.com/6eda4a57-8890-49a3-9780-0f410f53029d%2FFront.png?v=1594506031212");
+    font-family: sans-serif;
+   background-repeat: no-repeat;
+  background-size: 1536x 976px;
+  background-position: 50% 15%;
+}
+
+.links {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+}
+
+.links ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.links ul li{
+    width: 115px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 20px;
+    border: 1px solid rgb(255, 255, 255,0.5);
+    transition: 0.6s ease;
+    position: relative;
+    left: 400px;
+}
+
+.links ul li a:hover{
+    background-color: rgb(233, 233, 233,0.8);
+    color: black;
+}
+
+.logo #img{
+    float: left;
+    position: relative;
+    bottom: 100px;
+    height:auto; 
+    left : 150px;
+    width: 90px;
+}
+
+.text{
+  float: left;
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  left: 185px;
+  top: -80px;
+}
+
+.middle{
+  text-align: center;
+  width: 100%;
+  margin-top: 170px;
+  /*position: absolute; 
+  right: 600px;
+  top: 300px;*/
+}
+
+.middle #mid{
+  font-size: 60px;
+}
+
+.img-mid #img-mid{
+  /*float: left;*/
+    position: absolute;
+    height:auto; 
+    left : 680px;
+    top: 100px;
+    width: 175px;
+}
