@@ -10,22 +10,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="workout.css"> 
+  
+    <link rel="icon" href="https://cdn.glitch.com/6eda4a57-8890-49a3-9780-0f410f53029d%2Flogo.png?v=1594479529011">
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">
         <img id="img" width="10%" height="10%" src="https://cdn.glitch.com/6eda4a57-8890-49a3-9780-0f410f53029d%2Flogo.png?v=1594479529011">
         CORONAFIT 
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-          <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                   <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                  <li class="nav-item active"><a class="nav-link" href="workout.html">Workout / Diet</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
                   <li class="nav-item"><a class="nav-link" href="build.html">Build Workout</a></li>
+                  <li class="nav-item dropdown">
+                    <div class="btn-group">
+                      <a href="workout.html"><button type="button" class="btn btn-outline-secondary nav-link">Workout / Diet</button></a>
+                      <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <h3 class="dropdown-header text-align-center"> LEVEL</h3>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="intense.html">EASY</a>
+                        <a class="dropdown-item" href="intense.html">MEDIUM</a>
+                        <a class="dropdown-item" href="intense.html">INTENSE</a>
+                      </div>
+                    </div>
+                  </li>                  
+
               </ul>
           </div>
     </nav>
@@ -33,19 +50,24 @@
     <!--<div class="jumbotron">
       Workout / Diet Level
     </div>-->
-    <div class="container">
+  <center>
+    <div class="container justify-content-center">
       
-                  <h1 style="margin-top:80px;margin-bottom:30px;font:normal 50px Segoe UI;">Workout / Diet Level</h1>
+                  <h1 style="margin-top:80px;margin-bottom:30px;font:normal 50px;">Workout / Diet Level</h1>
       
       <div class="row">
-<!--           <div class="text" style="text-align:center; width:100%;"> -->
-            <div class="col-md-4" style="font:normal 30px Segoe UI;"><a href = "intense.html">EASY</a></div>
-            <div class="col-md-4" style="font:normal 30px Segoe UI;"><a href = "intense.html">MEDIUM</a></div>
-            <div class="col-md-4" style="font:normal 30px Segoe UI;"><a href = "intense.html">INTENSE</a></div>
-<!--           </div> -->
+          <div class="text" style="text-align:center; width:100%;">
+            <center>
+            <div class="col-md-4" style="font:normal 30px;"><a href="intense.html"><button type="button" class="btn btn-light">EASY</button></a></div><br>
+            <div class="col-md-4" style="font:normal 30px;"><a href="intense.html"><button type="button" class="btn btn-light">MEDIUM</button></div><br>
+            <div class="col-md-4" style="font:normal 30px;"><a href="intense.html"><button type="button" class="btn btn-light">INTENSE</button></div>
+            </center>
+            </div>
         </div>
       
     </div>
+    </center>
+  
 </body>
 </html>
 
