@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+  background: url();
+  background-repeat: no-repeat;
+  background-position: 40% 60%;
+  width: 100%
+}
+
+.links {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+}
+
+.links ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.links ul li{
+    width: 115px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 20px;
+    border: 1px solid rgb(255, 255, 255,0.5);
+    transition: 0.6s ease;
+    position: relative;
+    left: 400px;
+}
+
+.links ul li a:hover{
+    background-color: rgb(233, 233, 233,0.8);
+    color: black;
+}
+
+.img #vintense{
+    float: left;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    left: 100px;
+    top: 300px;
+}
+
+.text{
+    text-align: center;
+    position: relative;
+    right: 350px;
+    top: 150px;
+    font-size: 2rem;
+}
+
+.sub-text {
+    position: relative;
+    top: 750px;
+    right: 620px;
+}
+
+.workout #workout{
+    text-align: center;
+    position: relative;
+    top: 170px;
+    right: 825px;
+}
+
+.workout #diet{
+    text-align: center;
+    position: relative;
+    top: 170px;
+    left: 100px;
+}
+
+.workout #p1{
+    text-align: center;
+    position: relative;
+    left: 100px;
+    font-size: 20px;
+    top: 190px;
+}
