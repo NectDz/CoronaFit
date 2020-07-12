@@ -1,90 +1,38 @@
-:root {
-  --margin-left-width: 300px;
-}
-
-html {
-  min-width: 100%;
-  min-height: 100%;
-  background-image: url(https://cdn.glitch.com/6eda4a57-8890-49a3-9780-0f410f53029d%2FFront.png?v=1594471049300);
-  background-position: top center;
-}
-
 /* Master Styles */
-body {
+
+*{
   margin: 0;
+  padding: 0;
+}
+
+.body {
   font-family: "Segoe UI";
+  background-image: url(https://cdn.glitch.com/6eda4a57-8890-49a3-9780-0f410f53029d%2FFront.png?v=1594471049300);
+  background-repeat: no-repeat;
+  background-position: 50% 29%;
+  
+  max-width: 100%;
 }
 
-h1 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  margin-left: var(--margin-left-width);
-}
-
-h2 {
-  margin-top: 1em;
-  margin-left: var(--margin-left-width);
-}
-
-h3 {
-  margin-top: 0.5em;
-}
+/*overflow-x: hidden;
+  overflow-y: auto;*/
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-/* Nav Styles*/
-.left-side {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-start;
-  padding: 80px;
-  background-color: #171717;
-  position: relative; 
+.nav-wrapper {
+  
+  justify-content: space-between;
+  padding: 38px;
 }
 
-
-
-.nav-link-wrapper{
-  position: relative;
-  top:-40px;
-}
-
-
-/*linear-gradient(to right,hsl(173,96%,90%, 95%) 0%,hsl(302,96%,96%, 96%) 100%),*/
-
-.right-side {
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-start;
-  padding: 25px;
-  background-color: #FFFFFF;
-  border-radius: 0px 0px 0px 0px;
-  border: 2px solid #000000;
-  right: 0;
-  position: absolute;
-  right: 0;
-}
-
-.nav-wrapper
-{
-	display: flex;
-}
-
-.nav-wrapper > .right-side > div {
-  margin-right: 20px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  justify-content: flex-end;
-}
 
 .nav-wrapper > .left-side > div {
   margin-right: 20px;
-  font-size: 3rem;
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 .nav-link-wrapper {
@@ -93,28 +41,33 @@ h3 {
   transition: border-bottom 0.5s;
 }
 
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
 .nav-link-wrapper a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  color: #8a8a8a;
   text-decoration: none;
-  height:100%;
+  transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-  border-bottom: 1px solid hsl(173,96%,90%, 95%);
+  border-bottom: 1px solid black;
 }
 
 .nav-link-wrapper a:hover {
-  color: #FFFFFF;
+  color: black;
 }
+
 
 /* Portfolio Styles*/
 .portfolio-items-wrapper {
   display: grid;
-  grid-template-columns: 60% 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .portfolio-item-wrapper {
@@ -132,7 +85,7 @@ h3 {
 .img-text-wrapper {
   position: absolute;
   top: 0;
-  display: flex;
+  
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -142,15 +95,38 @@ h3 {
   padding-right: 100px;
 }
 
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    .body{
+      width: 100%;
+  }  
+.links{
+  width: 100%;
+  }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    .body{ 
+      width:100%; 
+  }
+  
+  .links{
+    width: 100%;
+  }
+}
+
+
 /* Slider Styles */
 .slidecontainer {
   width: 20%; /* Width of the outside container */
+  margin-top: 10px;
   margin-left: var(--margin-left-width);
   padding: 20px;
   background-color: #ffffff;
   border: solid;
-  border-width: 2px;
-  border-radius: 20px;
+  border-width: 1px;
+  border-radius: 15px;
   border-color: #d3d3d3;
 }
 
@@ -161,11 +137,14 @@ h3 {
   appearance: none;
   width: 100%; /* Full-width */
   height: 10px; /* Specified height */
+  border-radius: 5px;
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
   transition: opacity 0.2s;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .slider:hover {
@@ -176,17 +155,29 @@ h3 {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 20px; /* Set a specific slider handle width */
-  height: 20px; /* Slider handle height */
-  background: #4CAF50; /* Green background */
+  width: 20px;
+  height: 20px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: #d3d3d3;
+  background: #ffffff;
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #4CAF50; /* Green background */
+  width: 25px;
+  height: 25px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: #d3d3d3;
+  background: #ffffff;
   cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-ms-fill-lower {
+  background-color: #9ee34f; 
 }
 
 /*Progress Bar Styles*/
@@ -195,4 +186,52 @@ h3 {
 }
 
 .progress-bar {
+  width: 340px;
+  height: 24px;
+  background: #d3d3d3;
+  border-radius: 12px;
+}
+
+.progress-bar::-webkit-progress-bar {
+  border-radius: 12px;
+  background: #d3d3d3;
+}
+
+.progress-bar::-webkit-progress-value {
+  background: #ff8000;
+  border-radius: 12px;
+}
+
+.links {
+  
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+}
+
+.links ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.links ul li{
+    width: 165px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid rgb(255, 255, 255,0.5);
+    transition: 0.6s ease;
+    position: relative;
+    left: 200px;
+}
+
+.links ul li a:hover{
+    background-color: rgb(233, 233, 233,0.8);
+    color: black;
 }
